@@ -3,8 +3,8 @@ package Iterator;
 public class MenuIterator implements Iterator{
 	
 	
-	MenuItem[] itens;
-	int posicao;
+	private MenuItem[] itens;
+	private int posicao = 0;
 	
 	public MenuIterator(MenuItem[] itens){
 		this.itens = itens;

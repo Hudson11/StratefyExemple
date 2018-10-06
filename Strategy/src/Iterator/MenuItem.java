@@ -2,7 +2,7 @@ package Iterator;
 
 public class MenuItem {
 	
-	String nome;
+	private String nome;
 	
 	public MenuItem(String nome){
 		this.nome = nome;
