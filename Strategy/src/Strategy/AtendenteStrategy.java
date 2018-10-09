@@ -5,36 +5,39 @@ import java.util.HashMap;
 public abstract class AtendenteStrategy{
 	
 	private String login;
-	private HashMap<?, ?> callCenters;
-	private HashMap<?, ?> ilhas;
-	private HashMap<?, ?> segmentos;
-	private Calendar inicioVigencia;
+	private String callCenters;
+	private String ilhas;
+	private String segmentos;
+	private String inicioVigencia;
 	private String origemCadastro;
 	
+	
 	public String getLogin() {
-		return login;
+		return "Login usuario";
 	}
-	
-	public HashMap<?, ?> getCallCenters() {
-		return callCenters;
+
+	public String getCallCenters() {
+		return "Call center";
 	}
-	
-	public HashMap<?, ?> getIlhas() {
-		return ilhas;
+
+	public String getIlhas() {
+		return "Ilhas";
 	}
-	
-	public HashMap<?, ?> getSegmentos() {
-		return segmentos;
+
+	public String getSegmentos() {
+		return "Segmentos";
 	}
-	
-	public Calendar getInicioVigencia() {
-		return inicioVigencia;
+
+	public String getInicioVigencia() {
+		return "Incicio da Vigencia";
 	}
-	
+
 	public String getOrigemCadastro() {
-		return origemCadastro;
+		return "Origem do cadastro";
 	}
-	
+
+
+
 	public abstract Object saveParameter();
 	
 }

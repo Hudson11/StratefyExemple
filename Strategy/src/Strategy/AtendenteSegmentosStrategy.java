@@ -2,7 +2,9 @@ package Strategy;
 
 public class AtendenteSegmentosStrategy extends AtendenteStrategy{
 
-	private Object[] parans;
+	public Object[] parans;
+	
+	public AtendenteSegmentosStrategy(){}
 	
 	@Override
 	public Object saveParameter() {
@@ -17,6 +19,10 @@ public class AtendenteSegmentosStrategy extends AtendenteStrategy{
 		return parans;
 	}
 
+	public Object[] getParans() {
+		return parans;
+	}
+	
 }
 
 

@@ -4,6 +4,8 @@ public class AtendenteIlhasStrategy extends AtendenteStrategy{
 	
 	private Object[] parans;
 	
+	public AtendenteIlhasStrategy(){}
+	
 	@Override
 	public Object saveParameter() {
 		// TODO Auto-generated method stub
@@ -15,4 +17,9 @@ public class AtendenteIlhasStrategy extends AtendenteStrategy{
 		parans[4] = getIlhas();
 		return parans;
 	}
+
+	public Object[] getParans() {
+		return parans;
+	}
+	
 }

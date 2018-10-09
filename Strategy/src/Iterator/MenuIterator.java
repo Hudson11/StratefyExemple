@@ -49,7 +49,7 @@ public class MenuIterator implements Iterator{
 		MenuIterator menu = new MenuIterator(itens);
 		
 		//for(int i = 0; i < menu.itens.length; i++){
-		while(menu.hasNext() == true){
+		while(menu.hasNext()){
 			System.out.println(menu.next().toString());
 			//menu.hasNext();
 		}

@@ -4,6 +4,8 @@ public class AtendenteCallCenterStrategy extends AtendenteStrategy{
 
 	private Object[] parans;
 	
+	public AtendenteCallCenterStrategy(){}
+	
 	@Override
 	public Object saveParameter() {
 		// TODO Auto-generated method stub
@@ -14,4 +16,9 @@ public class AtendenteCallCenterStrategy extends AtendenteStrategy{
 		parans[3] = getOrigemCadastro();
 		return parans;
 	}
+
+	public Object[] getParans() {
+		return parans;
+	}
+	
 }
